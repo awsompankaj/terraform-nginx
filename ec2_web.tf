@@ -1,5 +1,5 @@
-resource "aws_instance" "anisble" {
-  ami = "ami-0b37e9efc396e4c38"
+resource "aws_instance" "anisble" {      // using resource aws_instance to create ec2 
+  ami = "ami-0b37e9efc396e4c38"          // using ubuntu
     instance_type = "t2.micro"
     security_groups = ["default"]   //existing security group
     key_name = "practical"          // already created private key   
